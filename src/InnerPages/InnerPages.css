@@ -1,0 +1,147 @@
+/* Common styles for the sidebar */
+.side_bar {
+    width: 20%;
+    height: 1900px;
+    background-color: rgb(41, 40, 40);
+    position: fixed;
+}
+
+.side_bar .link {
+    text-decoration: underline;
+}
+
+.side_bar div {
+    width: 290px;
+    height: 50px;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 5px 0px 0px 10px;
+    background-color: black;
+    color: white;
+}
+
+.side_bar div:hover {
+    width: 285px;
+    height: 45px;
+    transition: 300ms;
+}
+
+/* Common styles for the content */
+.javascript,
+.closure,
+.variables,
+.function,
+.hoisting {
+    width: 100%;
+    height: auto;
+    padding-top: 110px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.inner_content1,
+.inner_content2,
+.inner_content3,
+.inner_content4,
+.inner_content5 {
+    width: 80%;
+    height: auto;
+    padding: 10px 20px 50px 20px;
+    margin-left: 20%;
+}
+
+.inner_content1 p,
+.inner_content2 p,
+.inner_content3 p,
+.inner_content4 p,
+.inner_content5 p {
+    font-size: 18px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    .side_bar {
+        width: 30%;
+    }
+
+    .side_bar div,
+    .side_bar .link {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
+    .inner_content,
+    .inner_content1,
+    .inner_content2,
+    .inner_content3,
+    .inner_content4,
+    .inner_content5 {
+        width: 70%;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .side_bar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .side_bar div,
+    .side_bar .link {
+        width: auto;
+        height: auto;
+        margin: 10px 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .inner_content,
+    .inner_content1,
+    .inner_content2,
+    .inner_content3,
+    .inner_content4,
+    .inner_content5 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .side_bar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .side_bar div,
+    .side_bar .link {
+        width: auto;
+        height: auto;
+        margin: 10px 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .inner_content,
+    .inner_content1,
+    .inner_content2,
+    .inner_content3,
+    .inner_content4,
+    .inner_content5 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
